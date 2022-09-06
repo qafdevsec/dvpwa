@@ -13,5 +13,5 @@ jobs:
      run: |
         env
         echo "=========================="
-        docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest env
-        docker run --rm --env GITHUB_ACTIONS=_run --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest        
+        docker run --rm --env GITHUB_ACTIONS=true --env GITHUB_RUN_NUMBER=$GITHUB_RUN_NUMBER --env GITHUB_SHA=$GITHUB_SHA --env GITHUB_REF_NAME=$GITHUB_REF_NAME --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest env
+        #docker run --rm --env GITHUB_ACTIONS=true --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest        
