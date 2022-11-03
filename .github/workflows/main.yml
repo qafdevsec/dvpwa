@@ -15,4 +15,4 @@ jobs:
         #echo "=========================="
         #env | grep -E "GITHUB_ACTIONS|GITHUB_RUN_NUMBER|GITHUB_REF_NAME|GITHUB_SHA" > /tmp/env
         #docker run --rm --env-file /tmp/env --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest
-        sudo docker run --rm --env GITHUB_ACTIONS=true --env GITHUB_RUN_NUMBER=$GITHUB_RUN_NUMBER --env GITHUB_REF_NAME=$GITHUB_REF_NAME --env GITHUB_REF_NAME=$GITHUB_REF_NAME --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest        
+        sudo docker run --rm --env GITHUB_ACTIONS=true --env GITHUB_RUN_NUMBER=$GITHUB_RUN_NUMBER --env GITHUB_REF_NAME=$GITHUB_REF_NAME --env GITHUB_REF_NAME=$GITHUB_REF_NAME --add-host fortidevsec.forticloud.com:10.34.160.80 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest env       
