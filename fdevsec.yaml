@@ -2,7 +2,8 @@ version: v1
 
 id:
   org: 6ed94561-5abb-4215-9c16-65445ab1af66
-  app: 88e3f493-4875-46a2-90d5-5ccf9664beee
+  app: a7f898a3-f5a6-4247-ac80-f7ba18cb69a3
+
 
   
 fail_pipeline:
