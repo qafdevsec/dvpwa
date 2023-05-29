@@ -5,7 +5,9 @@ id:
   app: 0050ef01-bcc3-4f20-b817-69defb056252
   
 fail_pipeline:
-  risk_rating: 2
+  risk_rating: 7
+resource:
+  serial_scan: false
 
 #on_prem:
  # sec_ops_server: https://fortidevsecvm.corp.fortinet.com
