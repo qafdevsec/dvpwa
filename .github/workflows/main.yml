@@ -15,5 +15,5 @@ jobs:
         #echo "=========================="
         env | grep -E "GITHUB_ACTIONS|GITHUB_RUN_NUMBER|GITHUB_REF_NAME|GITHUB_SHA" > /tmp/env
         #cat /tmp/env
-        docker run --rm --env-file /tmp/env --add-host fortidevsec.forticloud.com:10.34.160.21 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest main s --app-id d56089a4-b22d-48a0-ae53-e2792f7f6d78 --org-id 22cb512a-00f2-4c79-90d5-12d00b512f9b
+        docker run --rm --env-file /tmp/env --add-host fortidevsec.forticloud.com:10.34.160.21 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest main s --app-id d56089a4-b22d-48a0-ae53-e2792f7f6d78 --org-id 22cb512a-00f2-4c79-90d5-12d00b512f9b --risk_rating 4 --serial-scan=false --scanner sast --language python
         #docker run --rm --add-host fortidevsec.forticloud.com:10.34.160.39 --env GITHUB_ACTIONS=true --env GITHUB_RUN_NUMBER=$GITHUB_RUN_NUMBER --env GITHUB_REF_NAME=$GITHUB_REF_NAME --env GITHUB_SHA=$GITHUB_SHA --add-host fortidevsec.forticloud.com:10.34.160.90 --mount type=bind,source="$PWD",target=/scan registry.fortidevsec.forticloud.com/fdevsec_sast:latest       
