@@ -1,8 +1,8 @@
 version: v1
 
-id:
-  org: c7a94178-103e-4a64-aac3-cde3ad95c8d5
-  app: 0050ef01-bcc3-4f20-b817-69defb056252
+#id:
+  #org: c7a94178-103e-4a64-aac3-cde3ad95c8d5
+  #app: 0050ef01-bcc3-4f20-b817-69defb056252
   
 fail_pipeline:
   risk_rating: 7
