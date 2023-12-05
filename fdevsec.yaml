@@ -1,6 +1,6 @@
 id:
-  org: f544b6c6-9651-4297-b2b1-67a5a95b9c01
-  app: f2be26c6-e8c1-438b-b428-0a3a70758f3f
+  org: fee0daf2-adc4-4af7-a456-4c4f8a2eee56
+  app: 58e874d3-6515-4afe-8fcc-c75ac7959323
 
 # If below settings are not configured, scans will be performed for all supported scanners.
 #scanners:
@@ -26,8 +26,8 @@ id:
 #  serial_scan: true #true|false
 
 # CI/CD pipeline fails when risk rating(range 0-9) exceeds the configured value.
-#fail_pipeline:
-#  risk_rating: 7
+fail_pipeline:
+  risk_rating: 7
 
 # Only for FortiDevSec OnPrem users. Cloud users should keep it commented
 #on_prem:
